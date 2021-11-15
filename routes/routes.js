@@ -34,6 +34,8 @@ const cacheMiddleware = (req,res,next)=>{
   res.set('Cache-control', 'no-cache')
   next()
 }
+
+/*  nivell 3 auth */
 const checkAuth = (req,res,next)=>{
   if(req.headers.authorization){
     next()
