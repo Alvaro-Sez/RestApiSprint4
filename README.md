@@ -1,5 +1,7 @@
 # Entrega 4.1: Node REST Server
 
+npm run start
+
 ## Endpoints
  ~~~
     GET 
