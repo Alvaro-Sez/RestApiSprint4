@@ -46,7 +46,9 @@ const checkAuth = (req,res,next)=>{
 }
 
 routes.post('/time', cors(), checkAuth, cacheMiddleware, (req,res)=>{
+  const {user} = req.body
   dateNow = {
+    user,
     date: new Date().toLocaleString()
   }
   res.status(200).send({dateNow})
